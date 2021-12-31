@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+         
+            <!-- Breadcrumbs Start -->
+            <div class="rs-breadcrumbs blogaiimg">
+                <div class="breadcrumbs-inner text-center">
+                    <h1 class="page-title new-title pb-10">{{blog.heading}}</h1>
+                    <ul>
+                        <li title="Braintech - IT Solutions and Technology Startup HTML Template">
+                            <a class="active" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li title="Go to Blog"><a class="active" href="{% url 'blog' %}">Blog</a></li>
+                        <li title="Go to the It Services category archives"><a class="active" href="{% url 'index' %}">It Services</a></li>
+                        <li>{{blog.heading}}</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumbs End -->
+
+            <!-- Blog Section Start -->
+            <div class="rs-inner-blog pt-120 pb-120 md-pt-90 md-pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 order-last">
+                            <div class="widget-area">
+                                <div class="search-widget mb-50">
+                                    <div class="search-wrap">
+                                        <input type="search" placeholder="Searching..." name="s" class="search-input" value="">
+                                        <button type="submit" value="Search"><i class="flaticon-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="recent-posts mb-50">
+                                    <div class="widget-title">
+                                        <h3 class="title">Latest Posts</h3>
+                                    </div>
+
+                                    {% for rb in recent_blog %}
+                                    <div class="recent-post-widget">
+                                        <div class="post-img">
+                                            <a href="{{rb.get_detail_url }}"><img src="{{rb.img.url}}" alt=""></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <a href="{{rb.get_detail_url }}">{{rb.sub_head}}</a>
+                                            <span class="date">
+                                                <i class="fa fa-calendar"></i>
+                                                {{rb.date}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+
+                                   
+                                    
+                                </div>
+                                <div class="categories mb-50">
+                                    <div class="widget-title">
+                                        <h3 class="title">Categories</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="{% url 'chat_bot' %}">Chatbot</a></li>
+                                     <li><a class="active" href="{% url 'iot' %}">Internet of Things (IoT)</a></li>
+                                     <li><a href="{% url 'ai' %}">Artificial Intelligence (AI)</a></li>
+                                     <li><a href="{% url 'mobile_development' %}">Mobile Application Development</a></li>
+                                     <li><a href="{% url 'network' %}">Net­work Support</a></li>
+                                     <li><a href="{% url 'web_design' %}">Web Design</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pr-35 md-pr-15">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="blog-details">
+                                        <div class="bs-img mb-35">
+                                            <a href="#"><img src="{{blog.img.url}}" alt=""></a>
+                                        </div>
+                                        <div class="blog-full">
+                                            <ul class="single-post-meta">
+                                                <li>
+                                                    <span class="p-date"><i class="fa fa-calendar-check-o"></i> {{blog.date}} </span>
+                                                </li> 
+                                                <li>
+                                                    <span class="p-date"> <i class="fa fa-user-o"></i> {{blog.author}}</span>
+                                                </li> 
+                                                <li class="Post-cate">
+                                                    <div class="tag-line">
+                                                        <i class="fa fa-book"></i>
+                                                        <a href="#">Strategy</a>
+                                                    </div>
+                                                </li>
+                                                <li class="post-comment"> <i class="fa fa-comments-o"></i> 1</li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                        {{blog.more_desc | safe}}.
+                                            </p>
+                                                <blockquote>
+                                                <p>As more and more artificial intelligence is entering into the world, more and more emotional intelligence must enter into leadership.<br>
+                                            <cite>Amit Ray, Famous AI Scientist, Author of Compassionate Artificial Intelligence</cite></p></blockquote>
+                                            
+                                            
+                                            
+                                           
+                                            <h3 class="comment-title">{{blog_count}} comment on “{{blog.heading}}”</h3>
+
+                                             {% for review in reviews %}
+                                            <div class="comment-body">
+                                               <div class="rstheme-logo">
+                                                   <img src="{% static 'images/rstheme.png' %}" alt="">
+                                               </div>
+                                               <div class="comment-meta">
+                                                   <span><a href="#">{{review.name}}</a></span>
+                                                   <a href="#">{{review.date}}</a>
+                                                   <p class="mb-15">
+                                                       {{review.message}}
+                                                   </p>
+<!--                                                   <div class="btn-part">-->
+<!--                                                      <a class="readon reply" href="#">Reply</a> -->
+<!--                                                   </div>-->
+                                               </div>
+                                            </div>
+                                             {% endfor %}
+                                            <h3 class="comment-title">Leave a Reply</h3>
+                                            <p>Your email address will not be published. Required fields are marked *</p>
+                                            <div class="comment-note">
+                                                <div id="form-messages"></div>
+                                                <form method="post" action="{% url 'add_reviews' %}">
+                                                     {% csrf_token %}
+                                                    <fieldset>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                                                <input class="from-control" type="text" id="name" name="name" placeholder="Name*" required="">
+                                                            </div>
+                                                            <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                                                <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail*" required="">
+                                                            </div>
+                                                            <div class="col-lg-12 mb-30">
+                                                                <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
+                                                            </div>
+                                                            <input type="hidden" name="slug" class="form-control" value="{{blog.slug}}">
+                                                        </div>
+                                                        <div class="btn-part">
+                                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                        </div> 
+                                                    </fieldset>
+                                                </form>
+                                                {% include 'alerts.html' %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!-- Blog Section End --> 
+
+        </div> 
+        <!-- Main content End -->
+           
+       
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp" class="orange-color">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="flaticon-cross"></span>
+            </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Search Here..." type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+{% endblock %}

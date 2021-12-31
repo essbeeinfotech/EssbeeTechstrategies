@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Services-Iot{% endblock %}
+{% block content %}
+
+         
+            <!-- Breadcrumbs Start -->
+            <div class="rs-breadcrumbs iot">
+                <div class="breadcrumbs-inner text-center">
+                    <h1 class="page-title">Internet of Things (IoT)</h1>
+                    <ul>
+                        <li title="Braintech - IT Solutions and Technology Startup HTML Template">
+                            <a class="active" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li title="Go To Services">
+                            <a class="active" href="{% url 'index' %}">Services</a>
+                        </li>
+                        <li>Internet of Things (IoT)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumbs End -->
+
+            <!-- Services Single Start -->
+            <div class="rs-services-single pt-120 pb-120 md-pt-80 md-pb-80">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 md-mb-50">
+                            
+                            <h2 class="mt-34">Internet of Things</h2>
+                            <p style="text-align: justify;">
+                                The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data.
+                                 An IoT ecosystem consists of web-enabled smart devices that use embedded 
+                                systems, such as processors, sensors and communication hardware, to collect, 
+                                send and act on data they acquire from their environments. 
+                                IoT devices share the sensor data they collect by connecting to an
+                                 IoT gateway or other edge device where data is either sent to 
+                                 the cloud to be analyzed or analyzed locally. Sometimes, 
+                                 these devices communicate with other related devices and act on the 
+                                 information they get from one another. The devices do most of the work 
+                                 without human intervention, although people can interact with the devices -- 
+                                 for instance, to set them up, give them instructions or access the data.
+                            </p>
+                           
+                            <h3 class="mt-34">Why Work With Us</h3>
+                             <!-- Skillbar Section Start -->
+                            <div class="rs-skillbar style1 modify1">
+                                <div class="cl-skill-bar">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <!-- Start Skill Bar -->
+                                            <span class="skillbar-title">Chatbot</span>
+                                            <div class="skillbar" data-percent="92">
+                                                <p class="skillbar-bar"></p>
+                                                <span class="skill-bar-percent"></span> 
+                                            </div>
+                                            <!-- Start Skill Bar -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- Start Skill Bar -->
+                                            <span class="skillbar-title">Internet of Things</span>
+                                            <div class="skillbar" data-percent="90">
+                                                <p class="skillbar-bar"></p>
+                                                <span class="skill-bar-percent"></span> 
+                                            </div>
+                                            <!-- Start Skill Bar -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- Start Skill Bar -->
+                                            <span class="skillbar-title">Artificial Intelligence (AI)</span>
+                                            <div class="skillbar" data-percent="85">
+                                                <p class="skillbar-bar"></p>
+                                                <span class="skill-bar-percent"></span> 
+                                            </div>
+                                            <!-- Start Skill Bar -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- Start Skill Bar -->
+                                            <span class="skillbar-title">Mobile Application Development</span>
+                                            <div class="skillbar" data-percent="92">
+                                                <p class="skillbar-bar"></p>
+                                                <span class="skill-bar-percent"></span> 
+                                            </div>
+                                            <!-- Start Skill Bar -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- Start Skill Bar -->
+                                            <span class="skillbar-title">Clean Code</span>
+                                            <div class="skillbar" data-percent="92">
+                                                <p class="skillbar-bar"></p>
+                                                <span class="skill-bar-percent"></span> 
+                                            </div>
+                                            <!-- Start Skill Bar -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- Start Skill Bar -->
+                                            <span class="skillbar-title">Web Design</span>
+                                            <div class="skillbar" data-percent="92">
+                                                <p class="skillbar-bar"></p>
+                                                <span class="skill-bar-percent"></span> 
+                                            </div>
+                                            <!-- Start Skill Bar -->
+                                        </div>
+                                    </div>                                   
+                               </div>
+                            </div>
+                            <!-- Skillbar Section End -->
+                            <h3 class="mt-30">24/7 Smart Support</h3>
+                            <p class="mt-20 mb-50" style="text-align: justify;">
+                                 Taking care of clients is our top priority!. Through our customer services available 24/7, we promise to hear your concerns and resolve issues with no delay.
+                            </p>
+                           
+                            <!-- Testimonial Section Start -->
+                            <div class="rs-testimonial style5">
+                                <div class="testi-item">
+                                    <div class="testi-img">
+                                        <img src="{% static 'images/indexicons/quote-white2.png' %}" alt="">
+                                    </div>
+                                    <p>If you think that the internet has changed your life, think again. The Internet of Things is about to change it all over again!</p>
+                                    <div class="testi-content">
+                                        <div class="testi-img">
+                                           <img src="{% static 'images/indexicons/quotess.jpg' %}" alt="">
+                                        </div>
+                                        <div class="author-part">
+                                            <div class="name">Brendan O’Brien</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Section End -->
+                        </div>
+                        <div class="col-lg-4 pl-32 md-pl-15">
+                            <ul class="services-list">
+                                <li><a href="{% url 'chat_bot' %}">Chatbot</a></li>
+                                <li><a class="active" href="{% url 'iot' %}">Internet of Things (IoT)</a></li>
+                                <li><a href="{% url 'ai' %}">Artificial Intelligence (AI)</a></li>
+                                <li><a href="{% url 'mobile_development' %}">Mobile Application Development</a></li>
+                                <li><a href="{% url 'network' %}">Net­work Support</a></li>
+                                <li><a href="{% url 'web_design' %}">Web Design</a></li>
+                            </ul>
+                            <div class="services-add mb-50 mt-50">
+                                <div class="address-item mb-35">
+                                    <div class="address-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                                <h2 class="title text-dark">Have any Questions? <br> Call us Today!</h2>
+                                <div class="contact">
+                                    <a href="tel:123222-8888" class="text-dark">+91 9633334389</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div> 
+               </div> 
+            </div>
+            <!-- Services Single End -->
+
+            <!-- Cta section start -->
+            <div class="rs-cta style1  bg-secondary pt-80 pb-80">
+                <div class="container">
+                    <div class="cta-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-9 col-md-12 md-mb-30">
+                                <span>Plan to Start a Project</span>
+                                <div class="title-wrap">
+                                    <h2 class="epx-title">Our Experts Ready to Help You</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 text-right col-md-12">
+                                <div class="button-wrap">
+                                    <a class="readon learn-more" href="{% url 'contact' %}">Get In Touch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cta section end -->
+
+        </div> 
+        <!-- Main content End -->
+     
+       
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp" class="orange-color">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="flaticon-cross"></span>
+            </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Search Here..." type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+
+  {% endblock %}

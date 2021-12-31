@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Services-AI{% endblock %}
+{% block content %}
+         
+            <!-- Breadcrumbs Start -->
+            <div class="rs-breadcrumbs aiimage">
+                <div class="breadcrumbs-inner text-center">
+                    <h1 class="page-title">Artificial Intelligence</h1>
+                    <ul>
+                        <li title="AI">
+                            <a class="active" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li title="Go To Services">
+                            <a class="active" href="{% url 'index' %}">Services</a>
+                        </li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumbs End -->
+
+            <!-- About Section Start -->
+            <div class="rs-about pt-120 pb-120 md-pt-80 md-pb-80">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pr-40 md-pr-15 md-mb-50">
+                            <div class="sec-title4">
+                                <span class="sub-text">Artificial intelligence</span>
+                                <div class="desc desc-big">
+                                    Artificial intelligence (AI) is the ability of a computer or a robot controlled by a computer to do tasks that are usually done by humans because they require human intelligence and discernment. </div>
+                               
+                                <div class="btn-part mt-45">
+                                    <a class="readon learn-more" href="{% url 'contact' %}">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="software-img">
+                                <img src="{% static 'images/indexicons/airobot.jpg' %}" alt="images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services Section Start -->
+                <div class="rs-services style5 pt-120 md-pt-80">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 md-mb-30">
+                                <div class="services-item">
+                                    <div class="services-icon">
+                                       <img src="{% static 'images/indexicons/expertpeople.png' %}" alt="Images">
+                                    </div>
+                                    <div class="services-content">
+                                        <h3 class="services-title">Expert Peoples</h3>
+                                         <p class="services-desc" align="justify">
+                                        We are skilled team of professionals in the field of technology,design and research.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 md-mb-30">
+                                <div class="services-item">
+                                    <div class="services-icon">
+                                       <img src="{% static 'images/indexicons/growingprocess.png' %}" alt="Images">
+                                    </div>
+                                    <div class="services-content">
+                                        <h3 class="services-title">First Growing Process</h3>
+                                        <p class="services-desc" align="justify">
+                                            The first stage of business growth is the development stage, which occurs before you open your doors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="services-item">
+                                    <div class="services-icon">
+                                       <img src="{% static 'images/indexicons/ideas.png' %}" alt="Images">
+                                    </div>
+                                    <div class="services-content">
+                                        <h3 class="services-title">Creative Ideas</h3>
+                                        <p class="services-desc" align="justify">
+                                                    Creativity is the process of bringing something new having original ideas that have value.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Services Section End -->
+            </div>
+            <!-- About Section End -->
+
+
+            <!-- About Section Start -->
+            <div id="rs-about" class="rs-about gray-color pt-120 pb-120 md-pt-80 md-pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 pr-45 md-pr-15 md-mb-50">
+                            <div class="choose-img">
+                               <img src="{% static 'images/indexicons/choose.png' %}" alt="images">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="sec-title mb-30">
+                                <div class="sub-text choose">Why Choose Us</div>
+                                <h2 class="title pb-20">
+                                    We Are Increasing Business Success With Technology
+                                </h2>
+                                <div class="desc">
+                                   Over 1 years working in IT services developing software applications and mobile apps for clients all over the world.
+                                </div>
+                            </div>
+                            <!-- Skillbar Section Start -->
+                           <div class="rs-skillbar style1 modify1">
+                               <div class="cl-skill-bar">
+                                  <!-- Start Skill Bar -->
+                                  <span class="skillbar-title">Software Development</span>
+                                  <div class="skillbar" data-percent="92">
+                                      <p class="skillbar-bar"></p>
+                                      <span class="skill-bar-percent"></span> 
+                                  </div>
+                                  <!-- Start Skill Bar -->
+                                  <span class="skillbar-title">Web Development</span>
+                                  <div class="skillbar" data-percent="80">
+                                      <p class="skillbar-bar"></p>
+                                      <span class="skill-bar-percent"></span> 
+                                  </div>
+                                  <!-- Start Skill Bar -->
+                                  <span class="skillbar-title">SEO Analysis</span>
+                                  <div class="skillbar" data-percent="95">
+                                      <p class="skillbar-bar"></p>
+                                      <span class="skill-bar-percent"></span> 
+                                  </div>    
+                                  <!-- Start Skill Bar -->
+                                  <span class="skillbar-title">Cyber Security</span>
+                                  <div class="skillbar" data-percent="78">
+                                      <p class="skillbar-bar"></p>
+                                      <span class="skill-bar-percent"></span> 
+                                  </div>
+                              </div>
+                           </div>
+                           <!-- Skillbar Section End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Section End -->
+
+           
+            
+            <!-- Partner Start -->
+            <div class="rs-partner pt-5 pb-5">
+                <div class="container">
+                    <div class="rs-carousel owl-carousel" data-loop="false" data-items="5" data-margin="15" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
+                         {% for client in client %}
+                    <div class="partner-item">
+                        <div class="logo-img">
+                            <a href="{{client.website}}">
+                                <img class="hover-logo" src="{{client.logo.url}}" alt="client logo" style="width:170px;height:150px;">
+                                <img class="main-logo" src="{{client.logo.url}}" alt="client logo" style="width:170px;height:150px;">
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Partner End -->
+
+        </div> 
+        <!-- Main content End -->
+     
+        <!-- Footer Start -->
+      
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp" class="orange-color">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="flaticon-cross"></span>
+            </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Search Here..." type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+
+        {% endblock %}

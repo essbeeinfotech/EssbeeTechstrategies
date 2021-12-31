@@ -1,0 +1,355 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+        <!-- Breadcrumbs Start -->
+        <div class="rs-breadcrumbs img1">
+            <div class="breadcrumbs-inner text-center">
+                <h1 class="page-title">About</h1>
+                <ul>
+                    <li>
+                        <a class="active" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumbs End -->
+
+        <!-- About Section Start -->
+        <div class="rs-about gray-color pt-120 pb-120 md-pt-80 md-pb-80">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 md-mb-30">
+                        <div class="rs-animation-shape">
+                            <div class="images">
+                                <img src="{% static 'images/about/about-3.png' %}" alt="">
+                            </div>
+                            <div class="middle-image2">
+                                <img class="dance3" src="{% static 'images/about/effect-1.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-60 md-pl-15">
+                        <div class="contact-wrap">
+                            <div class="sec-title mb-30">
+                                <div class="sub-text style-bg">About Us</div>
+                                <h2 class="title pb-2">
+                                    We Are Increasing Business Success With Technology
+                                </h2>
+                                <div class="mt-3" style="text-align: justify;">
+                                    Our journey started through our passion for providing IT consulting and software 
+                                    development services. Under the prestigious leadership of Muhammed Shibily,
+                                    Muhammed  Koya, and Ashmi Jamal, EssbeeTechstrategies Private Limited in March 2021
+                                    flourished and  grew bigger as the days passed. Our head office is based in Kerala,
+                                    India, and we look  forward to expanding further into other states in India. Global
+                                    expansion is one of the key  objectives that our board members have been consistent
+                                    with. 
+                                </div>
+                                <div class="pb-1" style="text-align: justify;">
+                                    Being independent and well organized, this company takes an agile and radical
+                                    approach to custom software development outsourcing. We are determined to provide
+                                    quality services  benefits in improving your business performance and increasing
+                                    your reach in a fashion never  witnessed by you prior to this.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mt-5" style="text-align: justify;">
+                        Your satisfaction becomes the ultimate goal for us.
+                        We are proficient in understanding the  business challenges
+                        and competence, which further allows us to enhance the customer
+                        experience. Knowledge sees no end, and we ensure that our team
+                        continues learning by  adapting to the perpetual market requirements
+                        and the modern technologies that could be implemented to bring forth
+                        a drastic change in your business portfolio. Therefore, we ensure
+                        our proficiency in a few of the basics and the advanced technologies
+                        such as Python, .NET,  Java, PHP, JavaScript, and C++ to help companies adopt multiple new
+                        technologies.
+
+                    </div>
+                    <div class="col-sm-12 mt-3" style="text-align: justify;">
+                        Being a non-government company, we have been registered with the Ministry of Corporate  Affairs
+                        (MCA), under Registrar of Companies Cochin Kerala India. The Corporate  Identification Number
+                        (CIN) of EssbeeTechstrategies Private Limited is  U72900KL2021PTC068116, and the registration
+                        number is 068116.
+                    </div>
+                    <div class="btn-part mt-4">
+                        <a class="readon learn-more" href="{% url 'contact' %}">Learn-More</a>
+                    </div>
+                </div>
+                <!-- <div class="shape-image">
+                        <img class="top dance" src="assets/images/about/dotted-3.png" alt="">
+                    </div> -->
+            </div>
+        </div>
+        <!-- About Section End -->
+
+        <!-- Team Section Start -->
+        <div class="rs-team pt-4 pb-120 md-pt-80 md-pb-80 xs-pb-54">
+            <div class="sec-title2 text-center mb-30">
+                <span class="sub-text style-bg white-color">Team</span>
+                <h2 class="title white-color">
+                    Expert IT Consultants
+                </h2>
+            </div>
+            <div class="container">
+                <div class="container">
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                        data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="true"
+                        data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="true"
+                        data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="true"
+                        data-md-device="3" data-md-device-nav="false" data-md-device-dots="true">
+                        <div class="team-item-wrap">
+                            <div class="team-wrap">
+                                <div class="image-inner" style="width: 300px;">
+                                    <img src="{% static 'images/team/style1/1.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4 class="person-name"><a href="#">Muhammed Shibily</a></h4>
+                                <span class="designation">CEO & Founder</span>
+                                <ul class="team-social">
+                                    <li><i class="fa fa-facebook"></i></li>
+                                    <li><i class="fa fa-instagram"></i></li>
+                                    <li><i class="fa fa-twitter"></i></li>
+                                    <li><i class="fa fa-pinterest-p"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item-wrap">
+                            <div class="team-wrap">
+                                <div class="image-inner" style="width: 300px;">
+                                    <img src="{% static 'images/team/style1/2.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4 class="person-name"><a href="#">Ashmi</a></h4>
+                                <span class="designation">CEO</span>
+                                <ul class="team-social">
+                                     <li><i class="fa fa-facebook"></i></li>
+                                    <li><i class="fa fa-instagram"></i></li>
+                                    <li><i class="fa fa-twitter"></i></li>
+                                    <li><i class="fa fa-pinterest-p"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item-wrap">
+                            <div class="team-wrap">
+                                <div class="image-inner" style="width: 300px;">
+                                    <img src="{% static 'images/team/style1/3.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4 class="person-name"><a href="single-team.html">Mary Akhila</a></h4>
+                                <span class="designation">Web Developer</span>
+                                <ul class="team-social">
+                                    <li><i class="fa fa-facebook"></i></li>
+                                    <li><i class="fa fa-instagram"></i></li>
+                                    <li><i class="fa fa-twitter"></i></li>
+                                    <li><i class="fa fa-pinterest-p"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item-wrap">
+                            <div class="team-wrap">
+                                <div class="image-inner" style="width: 300px;">
+                                   <img src="{% static 'images/team/style1/4.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="team-content text-center">
+                                <h4 class="person-name"><a href="single-team.html">Ajaymol</a></h4>
+                                <span class="designation">Software Programmer</span>
+                                <ul class="team-social">
+                                    <li><i class="fa fa-facebook"></i></li>
+                                    <li><i class="fa fa-instagram"></i></li>
+                                    <li><i class="fa fa-twitter"></i></li>
+                                    <li><i class="fa fa-pinterest-p"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                       
+                       
+                </div>
+            </div>
+        </div>
+        <!-- Team Section End -->
+
+        <!-- Process Section Start -->
+        <div class="rs-process style2 pt-120 pb-120 md-pt-80 md-pb-73">
+            <div class="container">
+                <div class="sec-title2 text-center mb-45">
+                    <span class="sub-text style-bg">Process</span>
+                    <h2 class="title title2">
+                        Our Working Process
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 md-mb-50">
+                        <div class="addon-process">
+                            <div class="process-wrap">
+                                <div class="process-img">
+                                    <img src="{% static 'images/process/1.png' %}" alt="" style="width:300px;height:170px;">
+                                </div>
+                                <div class="process-text">
+                                    <h3 class="title">Discovery</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 md-mb-50">
+                        <div class="addon-process">
+                            <div class="process-wrap">
+                                <div class="process-img">
+                                    <img src="{% static 'images/process/2.png' %}" alt="" style="width:300px;height:170px;">
+                                </div>
+                                <div class="process-text">
+                                    <h3 class="title"> Planning</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 md-mb-50">
+                        <div class="addon-process">
+                            <div class="process-wrap">
+                                <div class="process-img">
+                                    <img src="{% static 'images/process/3.png' %}" alt="" style="width:300px;height:170px;">
+                                </div>
+                                <div class="process-text">
+                                    <h3 class="title">Execute</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 md-mb-50">
+                        <div class="addon-process">
+                            <div class="process-wrap">
+                                <div class="process-img">
+                                    <img src="{% static 'images/process/4.png' %}" alt="" style="width:300px;height:170px;">
+                                </div>
+                                <div class="process-text">
+                                    <h3 class="title">Deliver</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Section End -->
+
+       
+
+        <!-- Counter Section Start -->
+        <div class="rs-contact-wrap bg5 pt-120 pb-390 md-pt-80">
+            <div class="container">
+                <div class="sec-title2 text-center mb-30">
+                    <span class="sub-text style-bg white-color">Contact</span>
+                    <h2 class="title white-color">
+                        Request A Free Consultation
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!-- Counter Section End -->
+
+        <!-- Video Section End -->
+        <div class="rs-video-wrap style2 inner pb-120 md-pb-80">
+            <div class="container">
+                <div class="row margin-0 gray-color">
+                    <div class="col-lg-6 padding-0">
+                        <div class="video-item">
+                            <div class="rs-videos">
+                                <div class="animate-border main-home style2">
+                                    <a class="popup-border popup-videos"
+                                        href="https://www.youtube.com/watch?v=YLN1Argi7ik">
+                                        <i class="fa fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 padding-0">
+                        <div class="rs-requset">
+                            <div id="form-messages"></div>
+                            <form  method="post" action="{% url 'consultation' %}">
+                                 {% csrf_token %}
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="name" name="name"
+                                                placeholder="Name" required="">
+                                        </div>
+                                        <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="email" name="from_email"
+                                                placeholder="E-Mail" required="">
+                                        </div>
+                                        <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="phone" name="mobile_num"
+                                                placeholder="Phone Number" required="">
+                                        </div>
+                                        <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="Website" name="subject"
+                                                placeholder="Your Website" required="">
+                                        </div>
+
+                                        <div class="col-lg-12 mb-45">
+                                            <textarea class="from-control" id="message" name="message"
+                                                placeholder="Your message Here" required=""></textarea>
+                                        </div>
+                                         <!-- captcha -->
+				                        <script src='https://www.google.com/recaptcha/api.js'></script>
+				                         <div class="g-recaptcha" data-sitekey="6Lfnoc8aAAAAAEcLT3sKj1XmNnBgP7QhheXdeGWM"></div>
+                  <!--  end of captcha -->
+                                    </div>
+                                    <br>
+                                    <div class="btn-part">
+                                       <input class="readon learn-more submit" type="submit" value="Submit Now">
+                                    </div>
+                                </fieldset>
+                            </form>
+                             {% include 'alerts.html' %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Section End -->
+
+    </div>
+    <!-- Main content End -->
+
+
+
+    <!-- start scrollUp  -->
+    <div id="scrollUp" class="orange-color">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- End scrollUp  -->
+
+    <!-- Search Modal Start -->
+    <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="flaticon-cross"></span>
+        </button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="search-block clearfix">
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Search Here..." type="text">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Search Modal End -->
+
+    {% endblock %}

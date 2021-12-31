@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx"> 
+    <head>
+        <!-- meta tag -->
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="description" content="">
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/fav.png' %}">
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+        <!-- flaticon css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'fonts/flaticon.css' %}">
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+        <!-- slick css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/off-canvas.css' %}">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+        <!-- Main Menu css -->
+        <link rel="stylesheet" href="{% static 'css/rsmenu-main.css' %}">
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/rs-spacing.css' %}">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"> <!-- This stylesheet dynamically changed from style.less -->
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="defult-home">
+        
+        <!--Preloader area start here-->
+        <div id="loader" class="loader">
+            <div class="loader-container"></div>
+        </div>
+        <!--Preloader area End here--> 
+     
+		<!-- Main content Start -->
+        <div class="main-content">
+            <!--Full width header Start-->
+            <div class="full-width-header">
+                <!--Header Start-->
+                <header id="rs-header" class="rs-header">
+                    <!-- Topbar Area Start -->
+                    <div class="topbar-area pt-0 pb-1">
+                        <div class="container-fluid px-4">
+                            <div class="row rs-vertical-middle align-items-center">
+                                <div class="col-lg-1">
+                                    <div>
+                                        <a href="index.html"><img src="{% static 'images/logo-dark.png' %}" class="logo-imgs" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 text-right">
+                                    <ul class="rs-contact-info">
+                                        <li class="contact-part">
+                                            <i class="flaticon-location"></i>
+                                            <span class="contact-info">
+                                                <span>Address</span>
+                                                NO.55/1631,PARAKOTTU TOWERS COCHIN
+                                            </span>
+                                        </li>
+                                        <li class="contact-part">
+                                            <i class="flaticon-email"></i>
+                                            <span class="contact-info">
+                                                <span>E-mail</span>
+                                                <a href="#">info@essbeeinfotech.com</a>
+                                            </span>
+                                        </li>
+                                        <li class="contact-part no-border">
+                                             <i class="flaticon-call"></i>
+                                            <span class="contact-info">
+                                                <span>Phone</span>
+                                                +91 9633334389
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Topbar Area End -->
+                    
+                    <!-- Menu Start -->
+                    <div class="menu-area menu-sticky">
+                        <div class="container">
+                             <div class="logo-area">
+                            <a href="{% url 'index' %}">
+                                <img class="sticky-logo" src="{% static 'images/logo-dark.png' %}" alt="logo">
+                            </a>
+                        </div>
+                            
+                            <div class="rs-menu-area">
+                                <div class="main-menu">
+                                    <div class="mobile-menu">
+                                    <a href="{% url 'index' %}" class="mobile-logo">
+                                        <img src="{% static 'images/logo-dark.png' %}" alt="logo">
+                                    </a>
+                                    <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                                    <nav class="rs-menu">
+                                        <ul class="nav-menu">
+                                             <li class="rs-mega-menu menu-item-has-children current-menu-item">  <a href="{% url 'index' %}">Home</a>
+                                                 
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'about' %}">About</a>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="#">Services</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="{% url 'chat_bot' %}">ChatBot</a> </li>
+                                                    <li><a href="{% url 'iot' %}">Internet of Things (IoT)</a> </li>
+                                                    <li><a href="{% url 'ai' %}">Artificial Intelligence (AI)</a></li>
+                                                    <li><a href="{% url 'mobile_development' %}">Mobile Application Development</a> </li>
+                                                    <li><a href="{% url 'network' %}">Net­work Support</a></li>
+                                                    <li><a href="{% url 'web_design' %}">Web Design</a> </li>
+                                                </ul>
+                                            </li>
+                                           
+                                            <li>
+                                               <a href="{% url 'blog' %}">Blog</a>
+                                               
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'career' %}">Career</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'contact' %}">Contact</a>
+                                            </li>
+                                        </ul> <!-- //.nav-menu -->
+                                    </nav>                                        
+                                </div> <!-- //.main-menu -->                                
+                            </div>
+                            <div class="expand-btn-inner search-icon hidden-sticky hidden-md">
+<!--                                <ul>-->
+<!--                                    <li class="sidebarmenu-search">-->
+<!--                                        <a class="hidden-xs rs-search" data-target=".search-modal" data-toggle="modal" href="#">-->
+<!--                                            <i class="flaticon-search"></i>-->
+<!--                                        </a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+                                <div class="toolbar-sl-share">
+                                    <ul class="social">
+                                        <li> <a href=https://www.facebook.com/Essbee-Infotech-546155818802137" target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
+                                        <li><a href="https://twitter.com/EssbeeInfotech?s=09" target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
+                                        <li><a href="https://wa.me/message/RHUSMHHFYLDKD1" target="_blank"><span><i class="fa fa-whatsapp"></i></span></a></li>
+                                        <li> <a href="https://www.instagram.com/essbeeinfotech" target="_blank"><span><i class="fa fa-instagram"></i></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu End -->
+                </header>
+                <!--Header End-->
+            </div>
+            <!--Full width header End-->
+            {% block content %}
+            {% endblock %}
+           
+        <!-- Main content End -->
+     
+        <!-- Footer Start -->
+        <footer id="rs-footer" class="rs-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+                            <div class="col-lg-4 px-0">
+                                <a href="index.html"><img src="{% static 'images/logo-dark.png' %}" alt=""></a>
+                            </div>
+                              <div class="textwidget pb-30"><p style="text-align: justify;">ESSBEE Techstrategies is one of the promising software companies to fulfill client's requirements.</p>
+                              </div>
+                              <ul class="footer-social md-mb-30">  
+                                  <li> 
+                                      <a href=https://www.facebook.com/Essbee-Infotech-546155818802137" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
+                                  </li>
+                                  <li> 
+                                      <a href="https://twitter.com/EssbeeInfotech?s=09" target="_blank"><span><i class="fa fa-twitter"></i></span></a>
+                                  </li>
+
+                                  <li> 
+                                      <a href="https://wa.me/message/RHUSMHHFYLDKD1" target="_blank"><span><i class="fa fa-whatsapp"></i></span></a>
+                                  </li>
+                                  <li> 
+                                      <a href="https://www.instagram.com/essbeeinfotech" target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                                  </li>
+                                                                           
+                              </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
+                            <h3 class="widget-title">IT Services</h3>
+                            <ul class="site-map">
+                                <li><a href="{% url 'ai' %}">Artificial Intelligence (AI)</a></li>
+                                <li><a href="{% url 'chat_bot' %}">Chatbot</a></li>
+                                <li><a href="{% url 'mobile_development' %}">Mobile Application Development</a></li>
+                                <li><a href="{% url 'web_design' %}">Web Design</a></li>
+                                <li><a href="{% url 'network' %}">Net­work Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
+                            <h3 class="widget-title">Contact Info</h3>
+                            <ul class="address-widget">
+                                <li>
+                                    <i class="flaticon-location"></i>
+                                    <div class="desc">NO.55/1631,PARAKOTTU TOWERS
+                                        COCHIN,KERALA,INDIA-682020</div>
+                                </li>
+                                <li>
+                                    <i class="flaticon-call"></i>
+                                    <div class="desc">
+                                       <a href="+91 9633334389">+91 9633334389</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="flaticon-email"></i>
+                                    <div class="desc">
+                                        <a href="mailto:info@essbeeinfotech.com" target="_blank"> info@essbeeinfotech.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="flaticon-clock-1"></i>
+                                    <div class="desc">
+                                        Opening Hours: 8:00 AM - 6:00 PM  
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <h3 class="widget-title">Newsletter</h3>
+                            <p class="widget-desc">Enter your email ID below to subscribe to our newsletter..</p>
+                            <p><form action="{% url 'email_subscription' %}" method="post">
+                            {% csrf_token %}
+                                <input type="email" name="email" placeholder="Your email address" required="">
+                                <em class="paper-plane"><input type="submit" value="Subscribe"></em>
+
+                            </form>
+                            {% include 'alerts.html' %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom bg-light">
+                <div class="container">                    
+                    <div class="row y-middle">
+                        <div class="col-lg-12">
+                            <div class="copyright">
+                                <p style="text-align: center;">&copy; 2021 - All Rights with <a href="https://www.essbeeinfotech.com/"><span class="text-primary">Essbee Techstrategies Pvt.Ltd</span></a> | CIN : U72900KL2021PTC068116</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp" class="orange-color">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="flaticon-cross"></span>
+            </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Search Here..." type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Search Modal End -->
+
+         <!-- modernizr js -->
+        <script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+        <!-- jquery latest version -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- Menu js -->
+        <script src="{% static 'js/rsmenu-main.js' %}"></script>
+        <!-- op nav js -->
+        <script src="{% static 'js/jquery.nav.js' %}"></script>
+        <!-- owl.carousel js -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <!-- wow js -->
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <!-- Skill bar js -->
+        <script src="{% static 'js/skill.bars.jquery.js' %}"></script>
+        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+         <!-- counter top js -->
+        <script src="{% static 'js/waypoints.min.js' %}"></script>
+        <!-- swiper js -->
+        <script src="{% static 'js/swiper.min.js' %}"></script>
+        <!-- particles js -->
+        <script src="{% static 'js/particles.min.js' %}"></script>
+        <!-- magnific popup js -->
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- plugins js -->
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <!-- pointer js -->
+        <script src="{% static 'js/pointer.js' %}"></script>
+        <!-- contact form js -->
+        <script src="{% static 'js/contact.form.js' %}"></script>
+        <!-- main js -->
+        <script src="{% static 'js/main.js' %}"></script>
+
+    </body>
+</html>

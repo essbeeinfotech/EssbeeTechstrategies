@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Services-Web Design{% endblock %}
+{% block content %}
+         
+            <!-- Breadcrumbs Start -->
+            <div class="rs-breadcrumbs webimg">
+                <div class="breadcrumbs-inner text-center">
+                    <h1 class="page-title">Web Design</h1>
+                    <ul>
+                        <li>
+                            <a class="active" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li title="Go To Services">
+                            <a class="active" href="{% url 'index' %}">Services</a>
+                        </li>
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumbs End -->
+
+            <!-- Services Single Start -->
+            <div class="rs-services-single pt-120 pb-120 md-pt-80 md-pb-80">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 md-mb-50">
+                            <div class="services-img">
+                                <img src="{% static 'images/indexicons/web.jpg' %}" alt="">
+                            </div>
+                            <h2 class="mt-34">Responsive Pixel Perfect Design</h2>
+                            <p style="text-align: justify;">
+                                Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.
+                                Web design is different from web development, which is the actual coding that makes a website work. When you're building a website, you need both web design and web development. ... They have technical skills as well as design skills and put them to work creating websites that attract and keep visitors.
+                            </p>
+                            
+                        </div>
+                        <div class="col-lg-4 pl-32 md-pl-15">
+                            <ul class="services-list">
+                                 <li><a href="{% url 'chat_bot' %}">Chatbot</a></li>
+                                <li><a class="active" href="{% url 'iot' %}">Internet of Things (IoT)</a></li>
+                                <li><a href="{% url 'ai' %}">Artificial Intelligence (AI)</a></li>
+                                <li><a href="{% url 'mobile_development' %}">Mobile Application Development</a></li>
+                                <li><a href="{% url 'network' %}">Net­work Support</a></li>
+                                <li><a href="{% url 'web_design' %}">Web Design</a></li>
+                            </ul>
+                            <div class="services-add mb-50 mt-50">
+                                <div class="address-item mb-35">
+                                    <div class="address-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                                <h2 class="title">Have any Questions? <br> Call us Today!</h2>
+                                <div class="contact">
+                                    <a href="tel:123222-8888">+91 9633334389</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div> 
+               </div> 
+            </div>
+            <!-- Services Single End -->
+
+            <!-- Cta section start -->
+            <div class="rs-cta style1 bg-secondary pt-80 pb-80">
+                <div class="container">
+                    <div class="cta-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-9 col-md-12 md-mb-30">
+                                <span>Plan to Start a Project</span>
+                                <div class="title-wrap">
+                                    <h2 class="epx-title">Our Experts Ready to Help You</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 text-right col-md-12">
+                                <div class="button-wrap">
+                                    <a class="readon learn-more" href="{% url 'contact' %}">Get In Touch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cta section end -->
+
+        </div> 
+        <!-- Main content End -->
+     
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp" class="orange-color">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="flaticon-cross"></span>
+            </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Search Here..." type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+{% endblock %}
